@@ -32,6 +32,8 @@ endif
 
 " Theme
 set termguicolors
+set t_Co=256
+set term=xterm-256color
 Plugin 'tomasr/molokai' " Molokai theme
 Plugin 'vim-airline/vim-airline' " Powerline status bar
 Plugin 'vim-airline/vim-airline-themes'
