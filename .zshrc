@@ -69,6 +69,7 @@ POWERLEVEL9K_VI_INSERT_MODE_STRING=''
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  bundler
   docker-compose
   git
   history-substring-search
@@ -112,3 +113,4 @@ export KEYTIMEOUT=1
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+source $HOME/.zshrc.local
