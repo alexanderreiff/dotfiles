@@ -15,6 +15,7 @@ tmux :
 	if [ -f ~/.tmux.conf ]; then  mv ~/.tmux.conf ~/.tmux.conf.bak; fi;
 	ln -s "$(current_dir)/.tmux.conf" ~
 	ln -s "$(current_dir)/tmux-theme" ~/.tmux/
+	ln -s "$(current_dir)/tmux-macos" ~/.tmux/
 
 vim :
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
