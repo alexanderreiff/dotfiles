@@ -16,6 +16,7 @@ tmux :
 	ln -s "$(current_dir)/.tmux.conf" ~
 	ln -s "$(current_dir)/tmux-theme" ~/.tmux/
 	ln -s "$(current_dir)/tmux-macos" ~/.tmux/
+	touch ~/.tmux/tmux-local.conf
 
 vim :
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
