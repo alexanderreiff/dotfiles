@@ -19,6 +19,7 @@ Plugin 'scrooloose/nerdtree' " Navigation tree
 Plugin 'tpope/vim-dispatch' " Dispatches test runner to tmux pane
 Plugin 'plasticboy/vim-markdown' " Markdown syntax
 Plugin 'ervandew/supertab' " Autocomplete
+Plugin 'vim-syntastic/syntastic' " Lint
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'ntpeters/vim-better-whitespace' " Strip whitespace
 
@@ -59,6 +60,10 @@ set formatoptions-=t " Disable line break insertion
 let g:strip_whitespace_on_save=1
 
 let mapleader=","
+
+" Lint
+let g:syntastic_ruby_checkers = ['mri', 'rubocop']
+let g:syntastic_ruby_rubocop_args = "-a"
 
 " Molokai
 syntax enable
