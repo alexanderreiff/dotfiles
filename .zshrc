@@ -2,6 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="$HOME/.cargo/bin:$PATH"
 
+source $HOME/.zshrc.local
 export ZSH_DISABLE_COMPFIX=true
 
 # Path to your oh-my-zsh installation.
@@ -75,6 +76,7 @@ plugins=(
   docker-compose
   git
   history-substring-search
+  tmux
   vi-mode
 )
 
@@ -115,4 +117,3 @@ export KEYTIMEOUT=1
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source $HOME/.zshrc.local
