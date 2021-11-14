@@ -1,6 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="$HOME/.cargo/bin:$PATH"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 source $HOME/.zshrc.local
 export ZSH_DISABLE_COMPFIX=true
@@ -76,7 +77,6 @@ plugins=(
   docker-compose
   git
   history-substring-search
-  tmux
   vi-mode
 )
 
